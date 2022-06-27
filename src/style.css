@@ -12,6 +12,7 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
+  background-color: #e5e5e5 !important;
 }
 
 /**
@@ -23,4 +24,30 @@ body {
   height: 600px;
   width: 350px;
   border-radius: 8px;
+  background-color: #fff;
+}
+
+/**
+* ! style rules for top-bar component
+**/
+
+.topBar {
+  display: flex;
+  gap: 16px;
+}
+
+.topBar__image {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+}
+
+.topBar__text {
+}
+
+.topBar__text--date {
+  font-size: 15px;
+}
+
+.topBar__text--name {
 }
