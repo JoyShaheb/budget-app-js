@@ -64,3 +64,77 @@ body {
 .balanceComponent__text {
   font-size: 15px;
 }
+
+/**
+* ! style rules for transaction component
+**/
+
+.transaction {
+}
+
+.transaction__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction__text--title {
+  font-size: 16px;
+}
+
+.transaction__text--button {
+  font-size: 14px;
+  color: #2d8169;
+  cursor: pointer;
+}
+
+.transaction__history {
+}
+
+/**
+* ! style rules for transaction cards
+**/
+
+[id^="transaction__history--"] {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.row__1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row__1--title {
+  font-weight: 600;
+}
+.row__1--date {
+  font-size: 12px;
+}
+
+.row__2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row__2--transID {
+  font-size: 12px;
+}
+
+.row__2--amount {
+  font-weight: 600;
+}
+
+hr {
+  margin: 8px 0 !important;
+}
+
+.red {
+  color: #c42d40;
+}
+
+.green {
+  color: #2d8169;
+}
