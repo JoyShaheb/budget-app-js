@@ -20,6 +20,7 @@ body {
 **/
 
 #app {
+  position: relative;
   border: 2px solid gray;
   height: 600px;
   width: 350px;
@@ -137,4 +138,35 @@ hr {
 
 .green {
   color: #2d8169;
+}
+
+/**
+* ! style rules for bottom nav component
+*/
+
+.bottomNav {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  width: 100%;
+  height: 73px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  background: rgba(183, 239, 197, 0.5);
+}
+
+[class^="bottomNav__"] {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* border: 2px solid green; */
+}
+
+p {
+  /* border: 2px solid blue; */
+  line-height: 0;
 }
