@@ -1,9 +1,19 @@
+import { nanoid } from "https://cdn.jsdelivr.net/npm/nanoid/nanoid.js";
+
 let loan = document.querySelector("#modals__loan");
 let amount = document.querySelector("#modals__loan--amount");
 
 export let loanComponent = () => {
   loan.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log({});
+    let loanData = {
+      id: nanoid(10),
+      title: "loan",
+      date: dayjs().format("hh:mm a D/MM/YY"),
+      amount: +amount.value,
+      color: "green",
+    };
+    e.clearfix;
+    console.log(loanData);
   });
 };
