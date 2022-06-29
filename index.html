@@ -39,23 +39,113 @@
 
 
     <div class="bottomNav">
-      <div class="bottomNav__payment">
+      <div class="bottomNav__payment" data-bs-toggle="modal" data-bs-target="#modals__payment">
         <i class="bi bi-cart2"></i>
         <p>Payment</p>
       </div>
-      <div class="bottomNav__receive">
+      <div class="bottomNav__receive" data-bs-toggle="modal" data-bs-target="#modals__receive">
         <i class="bi bi-credit-card-2-front"></i>
         <p>Receive</p>
       </div>
-      <div class="bottomNav__send">
+      <div class="bottomNav__send" data-bs-toggle="modal" data-bs-target="#modals__send">
         <i class="bi bi-send-plus"></i>
         <p>send</p>
       </div>
-      <div class="bottomNav__loan">
+      <div class="bottomNav__loan" data-bs-toggle="modal" data-bs-target="#modals__loan">
         <i class="bi bi-cash-coin"></i>
         <p>loan</p>
       </div>
     </div>
+
+
+    <div class="modals">
+      <!-- Modal -->
+      <form class="modal fade" id="modals__payment" tabindex="-1" aria-labelledby="modals__payment" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Make Payment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>purpose</p>
+              <input required type="text" id="modals__payment--purpose" class="form-control">
+              <br>
+              <p>Amount</p>
+              <input required type="number" name="" id="modals__payment--amount" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-success">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <form class="modal fade" id="modals__receive" tabindex="-1" aria-labelledby="modals__receive" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Make Payment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>From</p>
+              <input required id="modals__receive--from" type="text" class="form-control">
+              <br>
+              <p>Amount</p>
+              <input required type="number" name="" id="modals__receive--amount" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-success">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <form class="modal fade" id="modals__send" tabindex="-1" aria-labelledby="modals__send" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Make Payment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>To</p>
+              <input required type="text" id="modals__send--to" class="form-control">
+              <br>
+              <p>Amount</p>
+              <input required type="number" name="" id="modals__send--amount" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-success">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <form class="modal fade" id="modals__loan" tabindex="-1" aria-labelledby="modals__loan" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Make Payment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Amount</p>
+              <input required type="number" name="" id="modals__loan--amount" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-success">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
   </div>
 </body>
 <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
