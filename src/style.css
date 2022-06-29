@@ -170,3 +170,14 @@ p {
   /* border: 2px solid blue; */
   line-height: 0;
 }
+
+/**
+* ! style rules for empty component
+*/
+
+.emptyHistory {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
