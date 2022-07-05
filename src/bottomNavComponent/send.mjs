@@ -1,8 +1,10 @@
 import { nanoid } from "https://cdn.jsdelivr.net/npm/nanoid/nanoid.js";
+import { submitBtnComponent } from "./submitBtn.mjs";
 
 let send = document.querySelector("#modals__send");
 let to = document.querySelector("#modals__send--to");
 let amount = document.querySelector("#modals__send--amount");
+let submitBtn = document.querySelector("#modals__send--submit");
 
 export let sendComponent = () => {
   send.addEventListener("submit", (e) => {
@@ -14,6 +16,6 @@ export let sendComponent = () => {
       amount: +-amount.value,
       color: "red",
     };
-    console.log(sendData);
+    submitBtnComponent(sendData, to, amount, submitBtn);
   });
 };
