@@ -6,7 +6,7 @@ import { bottomNavComponent } from "./bottomNavComponent/index.mjs";
 let storage = JSON.parse(localStorage.getItem("data")) || [];
 
 getDateToday();
-balanceCalculator();
+balanceCalculator(storage);
 
 transactionComponent(storage);
 bottomNavComponent();
