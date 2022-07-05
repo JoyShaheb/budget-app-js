@@ -3,7 +3,14 @@ import { emptyComponent } from "./emptyHistory.mjs";
 let history = document.querySelector(".transaction__history");
 
 export let transactionComponent = (data) => {
-  // history.innerHTML += transactionCard();
-  // history.innerHTML += transactionCard();
-  history.innerHTML = emptyComponent();
+  let filteredData = data.filter((item, index) => index < 4).reverse();
+  if (data.length === 0) {
+    history.innerHTML = emptyComponent();
+  } else {
+    history.innerHTML = filteredData
+      .map((item) => {
+        return transactionCard(item);
+      })
+      .join("");
+  }
 };
