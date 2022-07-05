@@ -11,6 +11,7 @@ export let receiveComponent = () => {
     e.preventDefault();
     let receiveData = {
       id: nanoid(10),
+      reason: "receive money",
       title: from.value,
       date: dayjs().format("hh:mm a D/MM/YY"),
       amount: +amount.value,

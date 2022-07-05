@@ -10,6 +10,7 @@ export let loanComponent = () => {
     e.preventDefault();
     let loanData = {
       id: nanoid(10),
+      reason: "take loan",
       title: "loan",
       date: dayjs().format("hh:mm a D/MM/YY"),
       amount: +amount.value,

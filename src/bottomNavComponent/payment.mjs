@@ -11,6 +11,7 @@ export let paymentComponent = () => {
     e.preventDefault();
     let paymentData = {
       id: nanoid(10),
+      reason: "make payment",
       title: purpose.value,
       date: dayjs().format("hh:mm a D/MM/YY"),
       amount: +-amount.value,
