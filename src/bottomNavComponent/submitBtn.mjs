@@ -1,3 +1,4 @@
+import { balanceCalculator } from "../balanceCalculator.mjs";
 import { transactionComponent } from "../transactionComponent.mjs";
 
 let storage = JSON.parse(localStorage.getItem("data")) || [];
@@ -13,4 +14,5 @@ export let submitBtnComponent = (data, purpose, amount, submitBtn) => {
   console.log(storage);
 
   transactionComponent(storage);
+  balanceCalculator(storage);
 };
