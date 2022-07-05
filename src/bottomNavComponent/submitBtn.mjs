@@ -1,3 +1,5 @@
+import { transactionComponent } from "../transactionComponent.mjs";
+
 let storage = JSON.parse(localStorage.getItem("data")) || [];
 
 export let submitBtnComponent = (data, purpose, amount, submitBtn) => {
@@ -9,4 +11,6 @@ export let submitBtnComponent = (data, purpose, amount, submitBtn) => {
   submitBtn.click();
   submitBtn.setAttribute("data-bs-dismiss", "");
   console.log(storage);
+
+  transactionComponent(storage);
 };
